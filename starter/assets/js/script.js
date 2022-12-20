@@ -1,5 +1,0 @@
-
-var rightNow=moment().format()
-
-
-
