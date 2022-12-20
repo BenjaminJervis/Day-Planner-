@@ -2,10 +2,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: transparent;
 }
 
 textarea {
-  background: transparent;
+  background: none;
   border: none;
   resize: none;
   color: #000000;
@@ -15,7 +16,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: pink;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -34,17 +35,18 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #09b86c;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: #05283b;
+  color: rgb(232, 6, 138);
 }
 
 .present {
