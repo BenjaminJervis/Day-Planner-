@@ -1,10 +1,10 @@
 
 setInterval(function() {
-    var now = moment().format('HH:mm:ss DD-MM-YYYY')
+    var now = moment().format('HH:mm:ss DD-MM-YYYY') //function created to set current date and time using moment.js
     
-    $("#currentDay").text(now);
+    $("#currentDay").text(now); //displays the current date and time in the browser
 
-    $("#text-area-9am").addClass('past');
+    $("#text-area-9am").addClass('past'); //selector. addClass used to reference CSS 
     $("#text-area-10am").addClass('past');
     $("#text-area-11am").addClass('past');
     $("#text-area-12pm").addClass('present');
@@ -16,11 +16,25 @@ setInterval(function() {
 
 },1000);
 
-$("").on("click",function(){
+$(".saveBtn").on("click", function(){ //local storage function 
 
-    localStorage.setItem("9-notes",message)
-    let nineAmTextAreaValue=localStorage.getItem("9-notes")
-    textBox.text(nineAmTextAreaValue)
+var text = $(this).siblings(".description").val()
+var time = $(this).siblings(".description").attr("id")
+localStorage.setItem(time,text)
+console.log(text,time)
 })
-// localStorage.setItem("10-notes",m10)
-// localStorage.setItem("11-notes",m11)
+
+
+function meetingEnteredDisplay(){ //meeting saved function 
+    for (let time = 9; time < 18; time++) {
+        $(`#text-area-${time}${time >= 12 ? 'pm' : 'am'}`
+        ).val(localStorage.getItem(`text-area-${time}${time >= 12 ? 'pm' : 'am'}`))   
+        
+    }
+   
+
+
+
+}
+meetingEnteredDisplay()
+

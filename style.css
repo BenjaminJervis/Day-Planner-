@@ -6,9 +6,10 @@ body {
 }
 
 textarea {
+  align-items: center;
   background: none;
   border: none;
-  resize: none;
+  width: 800px;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
@@ -31,6 +32,7 @@ textarea {
   border-radius: 15px;
 }
 
+
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -45,7 +47,7 @@ textarea {
 }
 
 .past {
-  background-color: #05283b;
+  background-color: #757a7d;
   color: rgb(232, 6, 138);
 }
 
