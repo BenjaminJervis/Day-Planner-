@@ -10,7 +10,7 @@ We were required to create a simple calender application. This a simple app whic
 
 # screen shot of finished app  
 
-![Alt text](../../OneDrive/Pictures/Screenshots/day%20planner.png)
+(![Alt text](day%20planner.png))
 
 # Getting Started
 To help get started we were provided with a some intial HTML code to create the time blocks, basic HTML for the layout and CSS code. 
