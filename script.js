@@ -6,7 +6,7 @@ setInterval(function() {
 
     $("#text-area-9am").addClass('past'); //selector. addClass used to reference CSS 
     $("#text-area-10am").addClass('past');
-    $("#text-area-11am").addClass('past');
+    $("#text-area-11am").addClass('past'); // colours display past, present and future 
     $("#text-area-12pm").addClass('present');
     $("#text-area-13pm").addClass('future');
     $("#text-area-14pm").addClass('future');
