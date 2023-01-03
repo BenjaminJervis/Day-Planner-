@@ -16,13 +16,13 @@ setInterval(function() {
 
 },1000);
 
-$(".saveBtn").on("click", function(){ //local storage function 
+$(".saveBtn").on("click", function(){ //local storage function with button to save entries
 
 var text = $(this).siblings(".description").val()
 var time = $(this).siblings(".description").attr("id")
 localStorage.setItem(time,text)
 console.log(text,time)
-})
+})//this gets the value 
 
 
 function meetingEnteredDisplay(){ //meeting saved function 
@@ -37,4 +37,6 @@ function meetingEnteredDisplay(){ //meeting saved function
 
 }
 meetingEnteredDisplay()
+
+
 
